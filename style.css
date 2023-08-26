@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    grid-template-rows: 50px 1fr 75px;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 12px;
+    box-sizing: border-box;
+    height: 97vh;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: indigo;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container * {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.container * :is(p, a) {
+    margin: 15px 30px;
+}
+
+header {
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:last-child {
+    margin-left: auto;
+}
+
+nav {
+    background-color: gold;
+}
+
+main {
+    background-color: royalblue;
+}
+
+.right {
+    background-color: teal;
+}
+
+footer {
+    grid-column: span 3;
+    background-color: darkviolet;
+}
